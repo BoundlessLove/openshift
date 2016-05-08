@@ -11,8 +11,9 @@
 </head>
 <body>
 <h1>Web Calendar Login</h1>
-<h4>Valid credentials are:-</h4>
-<h5>Username: joshwilliams and Password: password</h5>
+<h3>Valid credentials are:-</h3>
+<br>Username: joshwilliams 
+<br>Password: password
 
 
 <form name="login" action="MyServlet" method="get">
