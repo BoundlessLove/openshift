@@ -17,12 +17,12 @@
 
 <form name="login" action="MyServlet" method="get">
 	<u1>
-		<li><label for="username">Username: </label>
-		<input type="text" ID="usernameTF" name="usernameTF" placeholder="enter username" required> </li>
-		<li><label for="password">Password: </label>
-		<input type="password" ID="passwordTF" name="passwordTF" placeholder="enter password" required> </li>
-		<li>
-		<input type="submit" ID="submit" value="Send" /></li>
+		<br><label for="username">Username: </label>
+		<input type="text" ID="usernameTF" name="usernameTF" placeholder="enter username" required>
+		<br><label for="password">Password: </label>
+		<input type="password" ID="passwordTF" name="passwordTF" placeholder="enter password" required> 
+		<br>
+		<br><input type="submit" ID="submit" value="Send" />
 	</u1>
 </form>
 <li></li>
