@@ -37,7 +37,7 @@
 				<br>
 				<br>CUCUMBER	: framework that allows writing code to defined acceptance driven tests.
 				<br>
-				<br>JUNIT		: API that provides functions to test via code. E.G. assertTrue("a","a") will return true.
+				<br>JUNIT		: API that provides functions to test via code. E.G. AssertEquals("a","a") will return true.
 				<br>
 				<br>SELENIUM RC	: API that provides functions to drive html pages. E.G. browser.findelement(byID("submit")).click() would click submit button.<br> 
 				 	
@@ -83,6 +83,7 @@
 						<td>
 							<h5>STEP 2</h5>
 								<br>Using cucumber framework, write code for tests using selenium RC API.  
+								<br>NOTE: The text "@Given" in screenshot below is followed by the test steps from STEP 1  
 								<br><img src="CucumberWithSeleniumCode.jpg" alt="AcceptanceTestSpecification">
 								
 						</td>
@@ -91,7 +92,7 @@
 						<td>
 							<h5>STEP 3</h5>
 								<br>Develop application to make cucumber tests pass (STEP 1). Progress able to be monitored within seconds, by running the JUnit project.
-								<by><img src="TDD_Run_Progress.jpg" alt="AcceptanceTestSpecification">     
+								<br><img src="TDD_Run_Progress.jpg" alt="AcceptanceTestSpecification">     
 						</td>
 					</tr>
 				</table>			 
