@@ -34,7 +34,7 @@ public class MyServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at2: ").append(request.getContextPath());
 		LogicLayer logic = new LogicLayer();
-		/*response.setContentType("text/html");
+		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		String username = request.getParameter("usernameTF");
 		String password = request.getParameter("passwordTF");
@@ -50,7 +50,7 @@ public class MyServlet extends HttpServlet {
 			}else{
 				out.println("<label id=\"welcomeMSG\" for=\"username\"> Sorry, invalid credentials</label>");			}
 	    out.println("</BODY>");	
-	    out.println("</HTML>");*/
+	    out.println("</HTML>");
 
 	}
 
