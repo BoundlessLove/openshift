@@ -7,26 +7,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
  <%@ page import="java.util.Properties"%>
 
-<title>hello.jsp</title>
+<title>Test Driven development</title>
 </head>
 <body>
-<h1>Let us get java working 1 :)</h1>
-<h2> Try 1: Check if this says hello world via a jsp command:</h2>
-<%= System.getenv("OPENSHIFT_APP_NAME")%>
- <%
-    double num = Math.random();
-    if (num > 0.95) {
-  %>
-      <h3>You'll have a luck day!</h3><p>(<%= num %>)</p>
-  <%
-    } else {
-  %>
-      <h3>Well, life goes on ... </h3><p>(<%= num %>)</p>
-  <%
-    }
-  %>
-  <a href="<%= request.getRequestURI() %>"><h3>Try Again</h3></a>
-<h2> Try 2: Check if page can be redirected</h2>
+<h1>Web Calendar Login</h1>
+<h4>Valid credentials are:</h4>
+<h5>username: joshwilliams</h5>
+<h5>password: password</h5>
+
+
 <form name="login" action="MyServlet" method="get">
 	<u1>
 		<li><label for="username">Username: </label>
