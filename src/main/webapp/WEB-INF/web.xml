@@ -5,7 +5,19 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          metadata-complete="false">
+ <display-name>jspHello</display-name>
 
+  <welcome-file-list>
+	    <welcome-file>hello.jsp</welcome-file>
+  </welcome-file-list>
+    <servlet>
+	    <servlet-name>MyServlet</servlet-name>
+	    <servlet-class>main.java.myapp2.MyServlet</servlet-class>   
+	</servlet>
+	<servlet-mapping>
+	   <servlet-name>MyServlet</servlet-name>
+	   <url-pattern>/src/main/myapp2/MyServlet</url-pattern>
+  	</servlet-mapping>   
          
 </web-app>
 
