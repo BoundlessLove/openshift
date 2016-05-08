@@ -12,8 +12,7 @@
 <body>
 <h1>Web Calendar Login</h1>
 <h4>Valid credentials are:</h4>
-<h5>username: joshwilliams</h5>
-<h5>password: password</h5>
+<h5>Username: joshwilliams and Password: password</h5>
 
 
 <form name="login" action="MyServlet" method="get">
@@ -27,8 +26,16 @@
 	</u1>
 </form>
 
-<h4>PURPOSE</h4>
-<h5>To demonstrate test driven development using cucumber, JUnit, Selenium RC on Eclipse</h5>
+<table border="1">
+	<tr>
+		<td>
+			<h4>PURPOSE</h4>
+				To demonstrate test driven development using cucumber, JUnit, Selenium RC on Eclipse
+			
+		</td>
+	</tr>
+</table>
+
 
 
 
