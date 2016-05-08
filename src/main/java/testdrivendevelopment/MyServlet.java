@@ -33,8 +33,8 @@ public class MyServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at2: ").append(request.getContextPath());
-		/*LogicLayer logic = new LogicLayer();
-		response.setContentType("text/html");
+		LogicLayer logic = new LogicLayer();
+		/*response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		String username = request.getParameter("usernameTF");
 		String password = request.getParameter("passwordTF");
@@ -54,7 +54,7 @@ public class MyServlet extends HttpServlet {
 
 	}
 
-/*	protected boolean credentialsExist(LogicLayer logic, String username, String password){
+	protected boolean credentialsExist(LogicLayer logic, String username, String password){
 		
 		if(logic.thisUserExists(username, password)){
 			return true;	
@@ -62,7 +62,7 @@ public class MyServlet extends HttpServlet {
 			return false;
 		}
 			
-	}*/	
+	}	
 	
 	/**
 	* @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
