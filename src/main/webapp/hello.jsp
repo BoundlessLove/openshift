@@ -26,5 +26,12 @@
 		<input type="submit" ID="submit" value="Send" /></li>
 	</u1>
 </form>
+
+<h4>PURPOSE</h4>
+<h5>To demonstrate test driven development using cucumber, JUnit, Selenium RC on Eclipse</h5>
+
+
+
+
 </body>
 </html>
