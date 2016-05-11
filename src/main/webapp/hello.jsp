@@ -124,7 +124,7 @@
 							<h5>PRE-REQUISITE</h5>
 								<br>1. Ruby version 2.0.0 installed.
 								<br>2. Ruby Mine IDE installed.
-								<br>3. Gems for RSpec, Capybara, Cucumber, activesupport, selenium-client, selenium-webdriver run. 
+								<br>3. Ruby Gems for RSpec, Capybara, Cucumber, activesupport, selenium-client, selenium-webdriver run. 
 						</td>
 					</tr>
 					<tr>
