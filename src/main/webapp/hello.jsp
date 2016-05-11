@@ -116,7 +116,7 @@
 	<tr>	
 		<td>
 			<h3>4. TEST DRIVEN DEVELOPMENT USING RUBY PROGRAMMING LANGUAGE</h3>
-				<h4>The same Selenium tests were also written using Ruby language on Ruby Mine IDE software</h4>
+				<h4>The same Selenium tests were also written and run using Ruby language on Ruby Mine IDE software</h4>
 				 The steps followed were:
 				<table>
 					<tr>
@@ -146,7 +146,7 @@
 					<tr>
 						<td>
 							<h5>STEP 3</h5>
-								<br>Develop application to make cucumber tests pass (STEP 1). Progress able to be monitored within seconds, by running the JUnit project.
+								<br>Develop application to make cucumber tests pass (STEP 1). Progress able to be monitored within seconds, by running the Capybara project.
 								<br><img src="MonitorProgress.jpg" alt="RubyMonitorProgress">     
 						</td>
 					</tr>
