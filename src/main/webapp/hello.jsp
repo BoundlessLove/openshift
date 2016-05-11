@@ -30,7 +30,21 @@
 <table border="1">
 	<tr>
 		<td>
-			<h3>PURPOSE</h3>
+			<h2> Table of Contents</h2>
+			<br>
+			<br>1. PURPOSE 
+			<br>
+			<br>2. WHAT THIS APPLICATION DOES
+			<br>
+			<br>3. WHY IS IT IMPORTANT 
+			<br>
+			<br>4. TEST DRIVEN DEVELOPMENT PERFORMED WITH RUBY 
+			<br>
+		</tr>
+	</tr>
+	<tr>
+		<td>
+			<h3>1. PURPOSE</h3>
 				<h4>To demonstrate "Test Driven Development" (TDD) using cucumber, JUnit and Selenium RC on Eclipse.</h4>
 				A one line summary of these tools is as below: 
 				<br>
@@ -46,7 +60,7 @@
 	</tr>
 	<tr>	
 		<td>
-			<h3>WHAT THIS APPLICATION DOES</h3>
+			<h3>2. WHAT THIS APPLICATION DOES</h3>
 				This application is about setting up an online web calendar. What you see here, is one user story, for logon, which has been fully implemented as of <%=new java.util.Date()%>. 
 				<br>
 				<br>At the moment this application:
@@ -62,7 +76,7 @@
 	</tr>
 	<tr>	
 		<td>
-			<h3>WHY IS IT IMPORTANT</h3>
+			<h3>3. WHY IS IT IMPORTANT</h3>
 				<h4>This application has been developed entirely using test driven development.</h4>
 				 The steps followed were:
 				<table>
@@ -99,7 +113,46 @@
 				</table>			 
 		</td>
 	</tr>
-	
+	<tr>	
+		<td>
+			<h3>4. TEST DRIVEN DEVELOPMENT USING RUBY</h3>
+				<h4>The same Selenium tests were also written using Ruby language on Ruby Mine IDE software</h4>
+				 The steps followed were:
+				<table>
+					<tr>
+						<td>
+							<h5>PRE-REQUISITE</h5>
+								<br>1. Ruby version 2.0.0 installed.
+								<br>2. Ruby Mine IDE installed.
+								<br>3. Gems for RSpec, Capybara, Cucumber, activesupport, selenium-client, selenium-webdriver run. 
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h5>STEP 1</h5>
+								<br>Specify Acceptance based test in simple word processor. 
+								<br><img src="RubyTestSpecification.jpg" alt="RubyTestSpecification">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h5>STEP 2</h5>
+								<br>Using cucumber framework, write code for tests using selenium RC API.  
+								<br>NOTE: The text "When" in screenshot below is followed by the test steps from STEP 1  
+								<br><img src="RubyImplementation.jpg" alt="RubyImplementation">
+								
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h5>STEP 3</h5>
+								<br>Develop application to make cucumber tests pass (STEP 1). Progress able to be monitored within seconds, by running the JUnit project.
+								<br><img src="MonitorProgress.jpg" alt="RubyMonitorProgress">     
+						</td>
+					</tr>
+				</table>			 
+		</td>
+	</tr>
 </table>
 </body>
 </html>
