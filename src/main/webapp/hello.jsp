@@ -38,7 +38,7 @@
 			<br>
 			<br>3. WHY IS IT IMPORTANT 
 			<br>
-			<br>4. TEST DRIVEN DEVELOPMENT PERFORMED WITH RUBY 
+			<br>4. TEST DRIVEN DEVELOPMENT PERFORMED WITH RUBY PROGRAMMING LANGUAGE
 			<br>
 		</tr>
 	</tr>
@@ -115,7 +115,7 @@
 	</tr>
 	<tr>	
 		<td>
-			<h3>4. TEST DRIVEN DEVELOPMENT USING RUBY</h3>
+			<h3>4. TEST DRIVEN DEVELOPMENT USING RUBY PROGRAMMING LANGUAGE</h3>
 				<h4>The same Selenium tests were also written using Ruby language on Ruby Mine IDE software</h4>
 				 The steps followed were:
 				<table>
