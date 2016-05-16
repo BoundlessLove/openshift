@@ -40,12 +40,14 @@
 			<br>
 			<br>4. TEST DRIVEN DEVELOPMENT PERFORMED WITH RUBY PROGRAMMING LANGUAGE
 			<br>
+			<br>5. TEST DRIVEN DEVELOPMENT ON MOBILE PLATFORM
+			<br>
 		</tr>
 	</tr>
 	<tr>
 		<td>
 			<h3>1. PURPOSE</h3>
-				<h4>To demonstrate "Test Driven Development" (TDD) using cucumber, JUnit and Selenium RC on Eclipse.</h4>
+				<h4>To demonstrate "Test Driven Development" (TDD) of a web application on browser and mobile platforms using cucumber, JUnit, Selenium RC and Appium with Eclipse.</h4>
 				A one line summary of these tools is as below: 
 				<br>
 				<br>ECLIPSE		: A GUI that allows coding and use of following technologies. 
@@ -55,12 +57,13 @@
 				<br>JUNIT		: API that provides functions to test via code. E.G. AssertEquals("a","a") will return true.
 				<br>
 				<br>SELENIUM RC	: API that provides functions to drive html pages. E.G. browser.findelement(byID("submit")).click() would click submit button.<br> 
-				 	
+				<br>
+				<br>APPIUM		: An application server like TOMCAT for mobiles. It hosts mobile devices (iOS and Android), so tests can be run on them.<br> 
 		</td>
 	</tr>
 	<tr>	
 		<td>
-			<h3>2. WHAT THIS APPLICATION DOES</h3>
+			<h3>2. WHAT THIS WEB APPLICATION DOES</h3>
 				This application is about setting up an online web calendar. What you see here, is one user story, for logon, which has been fully implemented as of <%=new java.util.Date()%>. 
 				<br>
 				<br>At the moment this application:
@@ -148,6 +151,50 @@
 							<h5>STEP 3</h5>
 								<br>Develop application to make cucumber tests pass (STEP 1). Progress able to be monitored within seconds, by running the Capybara project.
 								<br><img src="MonitorProgress.jpg" alt="RubyMonitorProgress">     
+						</td>
+					</tr>
+				</table>			 
+		</td>
+	</tr>
+	<tr>	
+		<td>
+			<h3>5. TEST DRIVEN DEVELOPMENT ON MOBILE PLATFORM</h3>
+				<h4>The same Selenium tests were also run on an android device with operating system version 5.1.1</h4>
+				 The steps followed were:
+				<table>
+					<tr>
+						<td>
+							<h5>PRE-REQUISITE</h5>
+								<br>1. ECLIPSE setup with Selenium RC, JUnit and cucumber.
+								<br>2. For web development using cloud deployment, Eclipse was setup with jBoss Openshift tools, red hat console (rhc) and GIT for configuration management. 
+								<br>3. ANDROID SDK downloaded, Eclise setup with AVD manager and SDK Manager with latest android phone emulators and environment variables setup.
+								<br>4. Appium application is dowloaded and launched. Java project created with the Apium JARS for android and java selenium jars from seleniumHq downloads page->Selenium Client & WebDriver Language Bindings.
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h5>STEP 1</h5>
+								<br>Run the appium server to launch the Android device, in my case an emulator.
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h5>STEP 2</h5>
+								<br>Using cucumber framework, write code for tests using selenium RC API.  
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h5>STEP 3</h5>
+								<br>Develop application to make cucumber tests pass (STEP 1). Progress able to be monitored within seconds, by running the JUnit project.
+								<br> In particular:
+								<br>Cucumber uses Selenium automation to enter data in mobile
+								<br><img src="SeleniumDrivenMobileDataEntry.jpg" alt="Selenium enters data in mobile"> 
+								<br>Cucumber uses Selenium automation to verify data presented in browser on mobile 
+								<br><img src="SeleniumDrivenVerification.jpg" alt="Selenium verifies page content in mobile">     
+								<br>Cucumber results displayed graphically at bottom of below screenshot with selenium code on top
+								<br><img src="SUMMARY_MobileTestingWithSeleniumCucumberJUnit.jpg" alt="Using Cucumber to drive selenium automation on mobile">     
+																
 						</td>
 					</tr>
 				</table>			 
