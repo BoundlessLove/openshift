@@ -38,9 +38,9 @@
 			<br>
 			<br>3. WHY IS IT IMPORTANT 
 			<br>
-			<br>4. TEST DRIVEN DEVELOPMENT PERFORMED WITH RUBY PROGRAMMING LANGUAGE
+			<br>4. TEST DRIVEN DEVELOPMENT (TDD) PERFORMED WITH RUBY PROGRAMMING LANGUAGE
 			<br>
-			<br>5. TEST DRIVEN DEVELOPMENT ON MOBILE PLATFORM
+			<br>5. TDD ON MOBILE PLATFORM
 			<br>
 		</tr>
 	</tr>
@@ -188,11 +188,15 @@
 							<h5>STEP 3</h5>
 								<br>Develop application to make cucumber tests pass (STEP 1). Progress able to be monitored within seconds, by running the JUnit project.
 								<br> In particular:
-								<br>Cucumber uses Selenium automation to enter data in mobile
+								<br>
+								<br>a) Cucumber uses Selenium automation to enter data in mobile
+								<br>
 								<br><img src="SeleniumDrivenMobileDataEntry.jpg" alt="Selenium enters data in mobile"> 
-								<br>Cucumber uses Selenium automation to verify data presented in browser on mobile 
+								<br>
+								<br>b) Cucumber uses Selenium automation to verify data presented in browser on mobile 
 								<br><img src="SeleniumDrivenVerification.jpg" alt="Selenium verifies page content in mobile">     
-								<br>Cucumber results displayed graphically at bottom of below screenshot with selenium code on top
+								<br>
+								<br>c) Cucumber results displayed graphically at bottom of below screenshot with selenium code on top
 								<br><img src="SUMMARY_MobileTestingWithSeleniumCucumberJUnit.jpg" alt="Using Cucumber to drive selenium automation on mobile">     
 																
 						</td>
