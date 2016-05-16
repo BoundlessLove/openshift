@@ -81,7 +81,7 @@
 		<td>
 			<h3>3. WHY IS IT IMPORTANT</h3>
 				<h4>This application has been developed entirely using test driven development.</h4>
-				 The steps followed were:
+				 The steps followed were to first develop the cucumber scripts to drive selenium tests followed by writing the code. In particular:
 				<table>
 					<tr>
 						<td>
@@ -160,7 +160,7 @@
 		<td>
 			<h3>5. TEST DRIVEN DEVELOPMENT ON MOBILE PLATFORM</h3>
 				<h4>The same Selenium tests were also run on an android device with operating system version 5.1.1</h4>
-				 The steps followed were:
+				 The steps followed to setup the tests for the mobile were:
 				<table>
 					<tr>
 						<td>
