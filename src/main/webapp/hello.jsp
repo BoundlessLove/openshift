@@ -27,6 +27,8 @@
 	</u1>
 </form>
 <li></li>
+<br> To find out the purpose of this application click <a href="detail.html" target="_top">here</a> 
+<br>
 <table border="1">
 	<tr>
 		<td>
