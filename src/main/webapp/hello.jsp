@@ -27,7 +27,7 @@
 	</u1>
 </form>
 <li></li>
-<h3> To find out the purpose of this application and automation used in it, please click <a href="detail.html" target="_top">here</a> </h3>
+<h5> For details on automation used, please click <a href="detail.html" target="_top">here</a> </h5>
 <br>
 </body>
 </html>
