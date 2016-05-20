@@ -70,7 +70,7 @@
 			<h3>2. WHAT THIS WEB APPLICATION DOES</h3>
 				This application is about setting up an online web calendar. What you see here, is one user story from sprint 1, for logon, which has been fully implemented as of <%=new java.util.Date()%>:. 
 				<br>
-				<br><img src="Sprint1_story1.jpg" alt="Completed User Story with estimates and actuals">				
+				<br><img src="Sprint1Story1" alt="Completed User Story with estimates and actuals">				
 				<br>
 				<br>At the moment this application:
 				<br>
