@@ -50,7 +50,7 @@
 				<h4>To demonstrate "Test Driven Development" (TDD) of a web application on browser and mobile platforms using cucumber, JUnit, Selenium RC and Appium with Eclipse.</h4>
 				<br> The development utilised agile software development as evidenced by the board below:
 				<br>
-				<br><img src="AgileBoard.jpg" alt="My Agile Board">
+				<br><img src="AgileBoard.jpg" alt="My Agile Board" style="width:500px;height:500px;">
 				<br>
 				<br>A one line summary of these tools is as below: 
 				<br>
@@ -70,7 +70,7 @@
 			<h3>2. WHAT THIS WEB APPLICATION DOES</h3>
 				This application is about setting up an online web calendar. What you see here, is one user story from sprint 1, for logon, which has been fully implemented as of <%=new java.util.Date()%>:. 
 				<br>
-				<br><img src="Sprint1Story1.jpg" alt="Completed User Story with estimates and actuals">				
+				<br><img src="Sprint1Story1.jpg" alt="Completed User Story with estimates and actuals" style="width:300px;height:300px;>				
 				<br>
 				<br>At the moment this application:
 				<br>
