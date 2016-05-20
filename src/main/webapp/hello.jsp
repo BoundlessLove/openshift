@@ -48,7 +48,11 @@
 		<td>
 			<h3>1. PURPOSE</h3>
 				<h4>To demonstrate "Test Driven Development" (TDD) of a web application on browser and mobile platforms using cucumber, JUnit, Selenium RC and Appium with Eclipse.</h4>
-				A one line summary of these tools is as below: 
+				<br> The development utilised agile software development as evidenced by the board below:
+				<br>
+				<br><img src="AgileBoard.jpg" alt="My Agile Board">
+				<br>
+				<br>A one line summary of these tools is as below: 
 				<br>
 				<br>ECLIPSE		: A GUI that allows coding and use of following technologies. 
 				<br>
@@ -64,7 +68,9 @@
 	<tr>	
 		<td>
 			<h3>2. WHAT THIS WEB APPLICATION DOES</h3>
-				This application is about setting up an online web calendar. What you see here, is one user story, for logon, which has been fully implemented as of <%=new java.util.Date()%>. 
+				This application is about setting up an online web calendar. What you see here, is one user story from sprint 1, for logon, which has been fully implemented as of <%=new java.util.Date()%>:. 
+				<br>
+				<br><img src="Sprint1_story1.jpg" alt="Completed User Story with estimates and actuals">				
 				<br>
 				<br>At the moment this application:
 				<br>
