@@ -51,8 +51,8 @@ public class MyServlet extends HttpServlet {
 				out.println("<label id=\"welcomeMSG\" for=\"username\"> Sorry, invalid credentials</label>");
 			}
 		out.println("<br>");
-		out.println("<br> <a href=\"hello.jsp\" target=\"_top\">back to login page</a>");	
-		out.println("<br> <a href=\"detail2.html\" target=\"_top\">Click</a> for details on automation used");	
+		out.println("<br> <a href=\"hello.jsp\" target=\"_top\">back</a> to login page");	
+		out.println("<br> <a href=\"detail2.html\" target=\"_top\">click</a> for details on automation used");	
 	    out.println("</BODY>");	
 	    out.println("</HTML>");
 
