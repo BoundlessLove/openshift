@@ -17,9 +17,7 @@ body, div {
 html, body {
     height: 100%;
 }
-div:not(#container) {
-    border: 1px solid black;
-}
+
 #header {
     background:orange;
 }
@@ -32,6 +30,27 @@ div:not(#container) {
 #footer {
     background:green;
 }
+
+.holder {   
+  width: auto;
+  display: inline-block;
+}
+
+.width70 {
+  width: 70%; 
+  height: auto;    
+}​
+
+.width30 {
+  width: 30%; 
+  height: auto;    
+}​
+
+.width100 {
+  width: 100%; 
+  height: auto;    
+}​
+
 .flex-init-setup {
      display: -webkit-box;
      display: -moz-box;
@@ -53,25 +72,271 @@ div:not(#container) {
 <body>
 
 <section id="container flex-init-setup flex-ppal-setup">
-          <hgroup>
-            <h1>Welcome to your JBossEWS (Apache/Tomcat) application on OpenShift</h1>
-          </hgroup>
+<div class="header"> 
+<h1>Web Calendar - "What, Why and How" questions answered</h1>
+<br> <a href="hello.jsp" target="_top">back</a> 
+<li></li>
+<br>
+<table border="1">
+	<tr>
+		<td>
+			<h2 id="toc"> Table of Contents</h2>
+			<br>
+			<br>1. <a href="#purpose">PURPOSE</a> 
+			<br>
+			<br>2. <a href="#whatItDoes">WHAT THIS APPLICATION DOES</a>
+			<br>
+			<br>3. <a href="#whyItIsImportant">WHY IS IT IMPORTANT?</a>
+			<br>
+			<br>4. <a href="#ruby">TEST DRIVEN DEVELOPMENT (TDD) PERFORMED WITH RUBY PROGRAMMING LANGUAGE</a>
+			<br>
+			<br>5. <a href="#mobile">TDD ON MOBILE PLATFORM</a>
+			<br>
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<div class="header">
+			<h3 id="purpose">1. PURPOSE</h3>
+				<h4>To demonstrate "Test Driven Development" (TDD) of a web application on browser and mobile platforms using 
 
+cucumber, JUnit, Selenium RC and Appium with Eclipse.</h4>
+				<br> The development utilised agile software development as evidenced by the board below:
+				<br>
+				<div class="holder">
+    					<img src="AgileBoard.jpg" class="width70"/>
+				</div>		
+				<br>
+				<br>A one line summary of these tools is as below: 
+				<br>
+				<br>ECLIPSE		: A GUI that allows coding and use of following technologies. 
+				<br>
+				<br>CUCUMBER	: framework that allows writing code to defined acceptance driven tests.
+				<br>
+				<br>JUNIT		: API that provides functions to test via code. E.G. AssertEquals("a","a") will return 
 
-        <div class="header">
-        
-              <h2>Deploying code changes</h2>
- 				<li> ta data data 1data data data data data data2 data data data data data3 data data data data data data data data4 data data5 data data 6data data data data data data data data data data data data data data data data data data data data data data data 7data data data data data 8data data 9data data data data data data data data data data da</li>
+true.
+				<br>
+				<br>SELENIUM RC	: API that provides functions to drive html pages. E.G. browser.findelement(byID
+
+("submit")).click() would click submit button.<br> 
+				<br>
+				<br>APPIUM		: An application server like TOMCAT for mobiles. It hosts mobile devices (iOS and 
+
+Android), so tests can be run on them.<br> 
+				<br>
+				<br> <a href="#toc">Back to Table Of Contents</a>	
 		</div>
-</section>
+		</td>
+	</tr>
+	<tr>	
+		<td>
+			<h3  id="whatItDoes">2. WHAT THIS WEB APPLICATION DOES</h3>
+				This application is about setting up an online web calendar. What you see here, is one user story from sprint 1, 
 
+for logon, which has been fully implemented .: 
+				<br>
+				<div class="holder">
+    					<img src="Sprint1Story1.jpg" class="width70"/>
+				</div>	
+				<br>
+				<br>At the moment this application:
+				<br>
+				<br>1. Takes user input in the form of username and password,
+				<br>
+				<br>2. On selecting submit button, validates the credentials via checking a MySql database.
+				<br>
+				<br>3. If the credentails authenticate successfully, it presents a welcome user message.
+				<br>
+				<br>4. If the credentails do NOT authenticate successfully, it presents a "invalid credentials" welcome message. 	
 
- <div id="container flex-init-setup flex-ppal-setup">
-    <div id="header">ta da</div>
-    <div id="content">ta sa 2 3</div>
-    <div id="footer">ta da 3</div>
+	
+				<br>
+				<br> <a href="#toc">Back to Table Of Contents</a>			   
+		</td>
+	</tr>
+	<tr>	
+		<td>
+			<h3 id="whyItIsImportant">3. WHY IS IT IMPORTANT</h3>
+				<h4>This application has been developed entirely using test driven development.</h4>
+				 The steps followed were to first develop the cucumber scripts to drive selenium tests followed by writing the 
+
+code. In particular:
+				<table>
+					<tr>
+						<td>
+							<h5>PRE-REQUISITE</h5>
+								<br>1. ECLIPSE setup with Selenium RC, JUnit and cucumber.
+								<br>2. For web development using cloud deployment, Eclipse was setup with jBoss 
+
+Openshift tools, red hat console (rhc) and GIT for configuration management. 
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h5>STEP 1</h5>
+								<br>Specify Acceptance based test in simple word processor. 
+								<div class="holder">
+    									<img src="AcceptanceTestExample.jpg" class="width70"/>
+								</div>		
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h5>STEP 2</h5>
+								<br>Using cucumber framework, write code for tests using selenium RC API.  
+								<br>NOTE: The text "@Given" in screenshot below is followed by the test steps 
+
+from STEP 1  
+								<div class="holder">
+    									<img src="CucumberWithSeleniumCode.jpg" class="width70"/>
+								</div>	
+								
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h5>STEP 3</h5>
+								<br>Develop application to make cucumber tests pass (STEP 1). Progress able to be 
+
+monitored within seconds, by running the JUnit project.
+								<div class="holder">
+    									<img src="TDD_Run_Progress.jpg" class="width70"/>
+								</div>	     
+						</td>
+					</tr>
+				</table>	
+				<br>
+				<br> <a href="#toc">Back to Table Of Contents</a>			 
+		</td>
+	</tr>
+	<tr>	
+		<td>
+			<h3 id="ruby">4. TEST DRIVEN DEVELOPMENT USING RUBY PROGRAMMING LANGUAGE</h3>
+				<h4>The same Selenium tests were also written and run using Ruby language on Ruby Mine IDE software</h4>
+				 The steps followed were:
+				<table>
+					<tr>
+						<td>
+							<h5>PRE-REQUISITE</h5>
+								<br>1. Ruby version 2.0.0 installed.
+								<br>2. Ruby Mine IDE installed.
+								<br>3. Ruby Gems for RSpec, Capybara, Cucumber, activesupport, selenium-client, 
+
+selenium-webdriver run. 
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h5>STEP 1</h5>
+								<br>Specify Acceptance based test in simple word processor. 
+								<div class="holder">
+    									<img src="RubyTestSpecification.jpg" class="width70"/>
+								</div>	
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h5>STEP 2</h5>
+								<br>Using cucumber framework, write code for tests using selenium RC API.  
+								<br>NOTE: The text "When" in screenshot below is followed by the test steps from 
+
+STEP 1  
+								<div class="holder">
+    									<img src="RubyImplementation.jpg" class="width70"/>
+								</div>	
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h5>STEP 3</h5>
+								<br>Develop application to make cucumber tests pass (STEP 1). Progress able to be 
+
+monitored within seconds, by running the Capybara project.
+    								<div class="holder">
+    									<img src="MonitorProgress.jpg" class="width70"/>
+								</div>	
+						</td>
+					</tr>
+				</table>	
+				<br>
+				<br> <a href="#toc">Back to Table Of Contents</a>			 
+		</td>
+	</tr>
+	<tr>	
+		<td>
+			<h3 id="mobile">5. TEST DRIVEN DEVELOPMENT ON MOBILE PLATFORM</h3>
+				<h4>The same Selenium tests were also run on an android device with operating system version 5.1.1</h4>
+				 The steps followed to setup the tests for the mobile were:
+				<table>
+					<tr>
+						<td>
+							<h5>PRE-REQUISITE</h5>
+								<br>1. ECLIPSE setup with Selenium RC, JUnit and cucumber.
+								<br>2. For web development using cloud deployment, Eclipse was setup with jBoss 
+
+Openshift tools, red hat console (rhc) and GIT for configuration management. 
+								<br>3. ANDROID SDK downloaded, Eclise setup with AVD manager and SDK Manager with 
+
+latest android phone emulators and environment variables setup.
+								<br>4. Appium application is dowloaded and launched. Java project created with 
+
+the Apium JARS for android and java selenium jars from seleniumHq downloads page->Selenium Client & WebDriver Language Bindings.
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h5>STEP 1</h5>
+								<br>Run the appium server to launch the Android device, in my case an emulator.
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h5>STEP 2</h5>
+								<br>Using cucumber framework, write code for tests using selenium RC API.  
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h5>STEP 3</h5>
+								<br>Develop application to make cucumber tests pass (STEP 1). Progress able to be 
+
+monitored within seconds, by running the JUnit project.
+								<br> In particular:
+								<br>
+								<br>a) Cucumber uses Selenium automation to enter data in mobile
+								<br>
+								<br><img src="SeleniumDrivenMobileDataEntry.jpg" alt="Selenium enters data in 
+
+mobile"> 
+								<br>
+								<br>b) Cucumber uses Selenium automation to verify data presented in browser on 
+
+mobile 
+								<br><img src="SeleniumDrivenVerification.jpg" alt="Selenium verifies page content 
+
+in mobile">     
+								<br>
+								<br>c) Cucumber results displayed graphically at bottom of below screenshot with 
+
+selenium code on top
+								<br><img src="SUMMARY_MobileTestingWithSeleniumCucumberJUnit.jpg" alt="Using 
+
+Cucumber to drive selenium automation on mobile">     
+																
+						</td>
+					</tr>
+				</table>			 
+				<br>
+				<br> <a href="#toc">Back to Table Of Contents</a>
+		</td>
+	</tr>
+</table>
+<br> To go back to web calendar application click <a href="hello.jsp" target="_top">here</a> 
+        
+  
 </div>
-
+</section>
 </body>
 </html>
- 
+        
