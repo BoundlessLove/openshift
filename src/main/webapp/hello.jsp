@@ -27,7 +27,7 @@
 	</u1>
 </form>
 <li></li>
-<h5> For details on automation used, please click <a href="detail.html" target="_top">here</a> </h5>
+<h5> For details on automation used, please click <a href="detail2.html" target="_top">here</a> </h5>
 <br>
 </body>
 </html>
