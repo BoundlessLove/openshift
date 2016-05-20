@@ -15,20 +15,21 @@ p.test {
 <body>
 <h1>Web Calendar - What, Why and How questions answered</h1>
 <br> To go back to application click <a href="hello.jsp" target="_top">here</a> 
+<br>
 <table border="1">
 	<tr>
 		<td>
-			<h2> Table of Contents</h2>
+			<h2 id="toc"> Table of Contents</h2>
 			<br>
 			<br>1. <a href="#purpose">PURPOSE</a> 
 			<br>
-			<br>2. WHAT THIS APPLICATION DOES
+			<br>2. <a href="#whatItDoes">WHAT THIS APPLICATION DOES</a>
 			<br>
-			<br>3. WHY IS IT IMPORTANT 
+			<br>3. <a href="#whyItIsImportant">WHY IS IT IMPORTANT?</a>
 			<br>
-			<br>4. TEST DRIVEN DEVELOPMENT (TDD) PERFORMED WITH RUBY PROGRAMMING LANGUAGE
+			<br>4. <a href="#ruby">TEST DRIVEN DEVELOPMENT (TDD) PERFORMED WITH RUBY PROGRAMMING LANGUAGE</a>
 			<br>
-			<br>5. TDD ON MOBILE PLATFORM
+			<br>5. <a href="#mobile">TDD ON MOBILE PLATFORM</a>
 			<br>
 		</tr>
 	</tr>
@@ -51,11 +52,13 @@ p.test {
 				<br>SELENIUM RC	: API that provides functions to drive html pages. E.G. browser.findelement(byID("submit")).click() would click submit button.<br> 
 				<br>
 				<br>APPIUM		: An application server like TOMCAT for mobiles. It hosts mobile devices (iOS and Android), so tests can be run on them.<br> 
+				<br>
+				<br> <a href="#toc">Back to Table Of Contents</a>	
 		</td>
 	</tr>
 	<tr>	
 		<td>
-			<h3>2. WHAT THIS WEB APPLICATION DOES</h3>
+			<h3  id="whatItDoes">2. WHAT THIS WEB APPLICATION DOES</h3>
 				This application is about setting up an online web calendar. What you see here, is one user story from sprint 1, for logon, which has been fully implemented as of <%=new java.util.Date()%>:. 
 				<br>
 				<br><img src="Sprint1Story1.jpg" alt="Completed User Story with estimates and actuals" style="width:300px;height:300px;">				
@@ -68,12 +71,14 @@ p.test {
 				<br>
 				<br>3. If the credentails authenticate successfully, it presents a welcome user message.
 				<br>
-				<br>4. If the credentails do NOT authenticate successfully, it presents a "invalid credentials" welcome message. 				   
+				<br>4. If the credentails do NOT authenticate successfully, it presents a "invalid credentials" welcome message. 		
+				<br>
+				<br> <a href="#toc">Back to Table Of Contents</a>			   
 		</td>
 	</tr>
 	<tr>	
 		<td>
-			<h3>3. WHY IS IT IMPORTANT</h3>
+			<h3 id="whyItIsImportant">3. WHY IS IT IMPORTANT</h3>
 				<h4>This application has been developed entirely using test driven development.</h4>
 				 The steps followed were to first develop the cucumber scripts to drive selenium tests followed by writing the code. In particular:
 				<table>
@@ -107,12 +112,14 @@ p.test {
 								<br><img src="TDD_Run_Progress.jpg" alt="AcceptanceTestSpecification">     
 						</td>
 					</tr>
-				</table>			 
+				</table>	
+				<br>
+				<br> <a href="#toc">Back to Table Of Contents</a>			 
 		</td>
 	</tr>
 	<tr>	
 		<td>
-			<h3>4. TEST DRIVEN DEVELOPMENT USING RUBY PROGRAMMING LANGUAGE</h3>
+			<h3 id="ruby">4. TEST DRIVEN DEVELOPMENT USING RUBY PROGRAMMING LANGUAGE</h3>
 				<h4>The same Selenium tests were also written and run using Ruby language on Ruby Mine IDE software</h4>
 				 The steps followed were:
 				<table>
@@ -147,12 +154,14 @@ p.test {
 								<br><img src="MonitorProgress.jpg" alt="RubyMonitorProgress">     
 						</td>
 					</tr>
-				</table>			 
+				</table>	
+				<br>
+				<br> <a href="#toc">Back to Table Of Contents</a>			 
 		</td>
 	</tr>
 	<tr>	
 		<td>
-			<h3>5. TEST DRIVEN DEVELOPMENT ON MOBILE PLATFORM</h3>
+			<h3 id="mobile">5. TEST DRIVEN DEVELOPMENT ON MOBILE PLATFORM</h3>
 				<h4>The same Selenium tests were also run on an android device with operating system version 5.1.1</h4>
 				 The steps followed to setup the tests for the mobile were:
 				<table>
@@ -194,6 +203,8 @@ p.test {
 								<br><img src="SUMMARY_MobileTestingWithSeleniumCucumberJUnit.jpg" alt="Using Cucumber to drive selenium automation on mobile">     
 																
 						</td>
+						<br>
+						<br> <a href="#toc">Back to Table Of Contents</a>	
 					</tr>
 				</table>			 
 		</td>
