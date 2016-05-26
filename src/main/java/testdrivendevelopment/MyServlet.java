@@ -32,7 +32,7 @@ public class MyServlet extends HttpServlet {
 	*/
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at2: ").append(request.getContextPath());
+		//response.getWriter().append("Served at2: ").append(request.getContextPath());
 		LogicLayer logic = new LogicLayer();
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
@@ -53,7 +53,8 @@ public class MyServlet extends HttpServlet {
 		out.println("<br>");
 		out.println("<br> <a href=\"hello.jsp\" target=\"_top\">back</a> to login page");	
 		out.println("<br> <a href=\"detail2.html\" target=\"_top\">click</a> for details on automation used");	
-	    out.println("</BODY>");	
+		out.println("<br>©Jay Sarna 2016");
+		out.println("</BODY>");	
 	    out.println("</HTML>");
 
 	}
