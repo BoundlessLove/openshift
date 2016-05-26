@@ -53,6 +53,7 @@ public class MyServlet extends HttpServlet {
 		out.println("<br>");
 		out.println("<br> <a href=\"hello.jsp\" target=\"_top\">back</a> to login page");	
 		out.println("<br> <a href=\"detail2.html\" target=\"_top\">click</a> for details on automation used");	
+		out.println("<br>");
 		out.println("<br>©Jay Sarna 2016");
 		out.println("</BODY>");	
 	    out.println("</HTML>");
