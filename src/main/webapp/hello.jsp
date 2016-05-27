@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<!-- saved from url=(0014)about:internet -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -16,7 +17,7 @@
 <br>Password: password
 
 
-<form name="login" action="MyServlet" method="get" onsubmit="event.preventDefault(); return validateMyForm();">
+<form name="login" action="MyServlet" method="get" onSubmit="return validateMyForm();">
 	<u1>
 		<br><label for="username">Username: </label>
 		<input type="text" ID="usernameTF" name="usernameTF" placeholder="enter username" required>
