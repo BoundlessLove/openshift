@@ -38,18 +38,21 @@ public class MyServlet extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		String username = request.getParameter("usernameTF");
 		String password = request.getParameter("passwordTF");
-		 
 		out.println("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 "
 				+ "Transitional//EN\">\n");
 		out.println("<HTML>"); 
 	    out.println("<TITLE>Web Calendar Home</TITLE>"); 
 	    out.println("<BODY>");
 	    out.println("<h1> Web Calendar Homepage</h1>"); 
+	    if(inputValidatedForSQLInjection(username, password)){ 
 			if (credentialsExist(logic,username,password)){
 				out.println("<label id=\"welcomeMSG\" for=\"username\">Welcome "+ username+"</label>");
 			}else{
 				out.println("<label id=\"welcomeMSG\" for=\"username\"> Sorry, invalid credentials</label>");
 			}
+	    }else{
+			out.println("<label id=\"welcomeMSG\" for=\"username\"> Sorry, invalid credentials</label>");
+	    }
 		out.println("<br>");
 		out.println("<br> <a href=\"hello.jsp\" target=\"_top\">back</a> to login page");	
 		out.println("<br> <a href=\"detail2.html\" target=\"_top\">click</a> for details on automation used");	
@@ -69,7 +72,16 @@ public class MyServlet extends HttpServlet {
 		}
 			
 	}	
-	
+
+	protected boolean inputValidatedForSQLInjection(String username, String password){
+		
+		if (username.contains("=") || username.contains(";") || password.contains("=") || password.contains(";") ) {
+			return false;	
+		}else{
+			return true;
+		}
+	}	
+
 	/**
 	* @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	*/

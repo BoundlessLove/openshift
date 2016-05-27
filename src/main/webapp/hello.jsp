@@ -17,7 +17,7 @@
 <br>Password: password
 
 
-<form name="login" action="MyServlet" method="get" onsubmit="return validateMyForm();">
+<form name="login" action="MyServlet" method="get" onSubmit="return validateMyForm();">
 	<u1>
 		<br><label for="username">Username: </label>
 		<input type="text" ID="usernameTF" name="usernameTF" placeholder="enter username" required>
