@@ -16,7 +16,7 @@
 <br>Password: password
 
 
-<form name="login" action="MyServlet" method="get">
+<form name="login" action="MyServlet" method="get" onsubmit="return validateMyForm();">
 	<u1>
 		<br><label for="username">Username: </label>
 		<input type="text" ID="usernameTF" name="usernameTF" placeholder="enter username" required>
@@ -26,7 +26,29 @@
 		<br><input type="submit" ID="submit" value="Send" />
 	</u1>
 </form>
-<li></li>
+
+<p id="demo"></p>
+
+<script "text/javascript">
+function validateMyForm() {
+	var usrnm, pswd, text;
+	
+	var usrnm = document.getElementById("usernameTF").value;
+	var pswd = document.getElementById("passwordTF").value;
+	if (usrnm.contains("=") || usrnm.contains(";") ||pswd.contains("=") || pswd.contains(";") ) {
+        
+		text = "Input not valid";
+		document.getElementById("demo").innerHTML = text;
+		return false;	
+    	
+	}
+	text = "Input valid"; 
+	document.getElementById("demo").innerHTML = text;
+	return true;
+}
+</script>
+
+<br>
 <h5> For details on Automation used, please click <a href="detail2.html" target="_top">here</a> </h5>
 <br>©Jay Sarna 2016
 </body>
