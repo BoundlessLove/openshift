@@ -9,6 +9,7 @@
  <%@ page import="java.util.Properties"%>
 
 <title>Test Driven development</title>
+<script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 <body>
 <h1>Web Calendar Login</h1>
@@ -24,6 +25,9 @@
 		<br><label for="password">Password: </label>
 		<input type="password" ID="passwordTF" name="passwordTF" placeholder="enter password" required> 
 		<br>
+		<br>
+       <div class="g-recaptcha"
+            data-sitekey="6LffHyETAAAAAN-vHjs7KCoSVEWAArUEkcsRSLyS" required></div>
 		<br><input type="submit" ID="submit" value="Send" />
 	</u1>
 </form>
