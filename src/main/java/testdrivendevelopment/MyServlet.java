@@ -51,7 +51,7 @@ public class MyServlet extends HttpServlet {
 	    out.println("<BODY>");
 	    out.println("<h1> Web Calendar Homepage</h1>"); 
 		 if (!captchaOK){
-				out.println("<label id=\"welcomeMSG\" for=\"username\"> Captch failed. Please go back login and re-enter captcha.</label>");			
+				out.println("<label id=\"welcomeMSG\" for=\"username\"> Captcha failed. Please go back login and re-enter captcha.</label>");			
 		 }else{
 		    if(inputValidatedForSQLInjection(username, password)){ 
 				if (credentialsExist(logic,username,password)){
