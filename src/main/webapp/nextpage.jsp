@@ -5,7 +5,7 @@
  <%@ page import="beans.*" %>
  <%@ page import="java.lang.*" %>
  
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -36,10 +36,9 @@
 <li></li>
 <form name="displaymonth" action="DisplayMonth" method="get">
 <br>To View a different Month, please select month and year below:</h3> 
-<br> NOTE: This part only works in Internet Explorer
 <br>
 <br> Select a month: 
-<select id="monthlist" name="monthlist" form="DisplayMonth">
+<select id="monthlist" name="monthlist">
    <option value="June">June</option>
    <option value="July">July</option>
    <option value="August">August</option>
@@ -47,7 +46,7 @@
 </select> 
 <br>
 <br> Select a year: 
-<select id="yearlist" name="yearlist" form="DisplayMonth">
+<select id="yearlist" name="yearlist">
    <option value="2016">2016</option>
    <option value="2015">2015</option>
    <option value="2017">2017</option>
