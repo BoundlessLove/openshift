@@ -54,6 +54,8 @@
 </select> 
  <br><li> <input type="submit" ID="submit" value="Submit" /></li>
 </form> 
-
+<br>
+<h5> For details on Automation used, please click <a href="detail2.html" target="_top">here</a> </h5>
+<br>©Jay Sarna 2016
 </body>
 </html>
