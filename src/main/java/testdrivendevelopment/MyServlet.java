@@ -48,14 +48,7 @@ public class MyServlet extends HttpServlet {
 		boolean captchaOK = verifyCaptcha(gRecaptchaResponse);
 		HttpSession session = request.getSession(true);
 		System.out.println("User=" + username + "::password=" + password + "::Captcha Verify "+captchaOK);
-		
-		out.println("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 "
-				+ "Transitional//EN\">\n");
-		out.println("<HTML>"); 
-	    out.println("<TITLE>Web Calendar Home</TITLE>"); 
-	    out.println("<BODY>");
-	    out.println("<h1> Web Calendar Homepage</h1>"); 
-		 if (!captchaOK){
+		if (!captchaOK){
 				out.println("<label id=\"welcomeMSG\" for=\"username\"> Captcha failed. Please go back login and re-enter captcha.</label>");			
 		 }else{
 			 if(inputValidatedForSQLInjection(username, password)){ 
