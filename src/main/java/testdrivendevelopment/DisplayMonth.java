@@ -13,7 +13,7 @@ import javax.servlet.http.HttpSession;
 /**
  * Servlet implementation class DisplayMonth
  */
-@WebServlet(name="DisplayMonth",urlPatterns={"/DisplayMonth"})
+
 public class DisplayMonth extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -38,6 +38,7 @@ public class DisplayMonth extends HttpServlet {
 		session.setAttribute("year", year);
 		//session.setAttribute("monthYear", month+" "+year);
 		response.sendRedirect("nextpage.jsp");
+		//test
 
 	}
 
