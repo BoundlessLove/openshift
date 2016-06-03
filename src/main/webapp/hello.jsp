@@ -32,7 +32,8 @@
 	</u1>
 </form>
 
-<p id="demo"></p>
+<p id="demo"><font color="red"></font></p>
+
 
 <script "text/javascript">
 function validateMyForm() {
@@ -42,7 +43,7 @@ function validateMyForm() {
 	var pswd = document.getElementById("passwordTF").value;
 	if (usrnm.contains("=") || usrnm.contains(";") ||pswd.contains("=") || pswd.contains(";") ) {
         
-		text = "Input not valid";
+		text = "*Error: Input not valid*";
 		document.getElementById("demo").innerHTML = text;
 		return false;	
     	
