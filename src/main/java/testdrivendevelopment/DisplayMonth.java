@@ -13,7 +13,7 @@ import javax.servlet.http.HttpSession;
 /**
  * Servlet implementation class DisplayMonth
  */
-
+@WebServlet("/DisplayMonth")
 public class DisplayMonth extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
