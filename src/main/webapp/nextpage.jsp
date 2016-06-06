@@ -12,15 +12,10 @@
 <title>Web Calendar Home</title>
 </head>
 <body>
-<% HttpSession session2 = request.getSession();
- 
-if(null!=session2.getAttribute("username")){
-    out.write("username is "+session2.getAttribute("username").toString());
-     
-    }
-else{
-    response.sendRedirect("/sessionInvalid.jsp");
-    }
+<%
+if (session.getAttribute("username") == null){
+	response.sendRedirect("hello.jsp");
+}
 %>
 <h1> Web Calendar Homepage</h1>
 <label id="welcomeMSG" for="username">Welcome <% out.print( session.getAttribute("username"));%></label>
@@ -63,6 +58,9 @@ else{
 </select> 
  <br><li> <input type="submit" ID="submit" value="Submit" /></li>
 </form> 
+<form name="logout" action="Logout" method="get">
+ <br><input type="submit" ID="Logout" value="Logout" onclick="Logout" />
+ </form>
 <br>
 <h5> For details on Automation used, please click <a href="detail2.html" target="_top">here</a> </h5>
 <br>©Jay Sarna 2016
