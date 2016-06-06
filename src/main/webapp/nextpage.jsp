@@ -12,6 +12,11 @@
 <title>Web Calendar Home</title>
 </head>
 <body>
+<%
+if (session.getAttribute("username") == null){
+	response.sendRedirect("MyServlet.jsp");
+}
+%>
 <h1> Web Calendar Homepage</h1>
 <label id="welcomeMSG" for="username">Welcome <% out.print( session.getAttribute("username"));%></label>
 <jsp:useBean id="monthDates" 
