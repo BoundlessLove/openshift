@@ -34,6 +34,7 @@ public class Logout extends HttpServlet {
 		HttpSession session = request.getSession(true);	
 		session.setAttribute("username", null);
         RequestDispatcher rd = getServletContext().getRequestDispatcher("/hello.jsp");
+        response.setContentType("text/html");
         PrintWriter out = response.getWriter();
         out.println("<font color=red>You have been logged out successfully.</font>");
         rd.include(request, response);
