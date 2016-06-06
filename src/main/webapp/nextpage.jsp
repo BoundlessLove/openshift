@@ -14,7 +14,7 @@
 <body>
 <%
 if (session.getAttribute("username") == null){
-	response.sendRedirect("MyServlet.jsp");
+	response.sendRedirect("MyServlet.java");
 }
 %>
 <h1> Web Calendar Homepage</h1>
