@@ -33,7 +33,7 @@ public class Logout extends HttpServlet {
 		// TODO Auto-generated method stub
 		HttpSession session = request.getSession(true);	
 		session.setAttribute("username", null);
-        RequestDispatcher rd = getServletContext().getRequestDispatcher("/Index.jsp");
+        RequestDispatcher rd = getServletContext().getRequestDispatcher("/hello.jsp");
         PrintWriter out = response.getWriter();
         out.println("<font color=red>You have been logged out successfully.</font>");
         rd.include(request, response);
