@@ -49,7 +49,7 @@ public class MyServlet extends HttpServlet {
 		HttpSession session = request.getSession(true);
 		System.out.println("User=" + username + "::password=" + password + "::Captcha Verify "+captchaOK);
 		if (!captchaOK){
-				out.println("<label id=\"welcomeMSG\" for=\"username\"> Captcha failed. Please go back login and re-enter captcha.</label>");			
+			printPage(out,"<label id=\"welcomeMSG\" for=\"username\"> Captcha failed. Please go back login and re-enter captcha.</label>");			
 		 }else{
 			 if(inputValidatedForSQLInjection(username, password)){ 
 					if (credentialsExist(logic,username,password)){
