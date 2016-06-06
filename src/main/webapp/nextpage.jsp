@@ -12,10 +12,15 @@
 <title>Web Calendar Home</title>
 </head>
 <body>
-<%
-if (session.getAttribute("username") == null){
-	response.sendRedirect("sessionInvalid.jsp");
-}
+<% HttpSession session2 = request.getSession();
+ 
+if(null!=session2.getAttribute("username")){
+    out.write("username is "+session2.getAttribute("username").toString());
+     
+    }
+else{
+    response.sendRedirect("/sessionInvalid.jsp");
+    }
 %>
 <h1> Web Calendar Homepage</h1>
 <label id="welcomeMSG" for="username">Welcome <% out.print( session.getAttribute("username"));%></label>
