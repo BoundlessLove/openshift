@@ -32,11 +32,11 @@ if (session.getAttribute("username") == null){
    <label id="CurrentMonth"> and Current Year: 
    <jsp:getProperty name="monthDates" property="year"/></label>
 </p>
-<p><label id="MonthStartDate">Month Start Date: 
-   <jsp:getProperty name="monthDates" property="monthStartDate"/></label>
+<p><label id="MonthStartDate">Month Start Date: <font color=blue>
+   <jsp:getProperty name="monthDates" property="monthStartDate"/></font></label>
 </p>
-<p><label id="MonthEndDate">Month End Date: 
-   <jsp:getProperty name="monthDates" property="monthEndDate"/></label>
+<p><label id="MonthEndDate">Month End Date: <font color=blue>
+   <jsp:getProperty name="monthDates" property="monthEndDate"/></font></label>
 </p>
 <li></li>
 <form name="displaymonth" action="DisplayMonth" method="get">
@@ -56,13 +56,14 @@ if (session.getAttribute("username") == null){
    <option value="2015">2015</option>
    <option value="2017">2017</option>
 </select> 
- <br><li> <input type="submit" ID="submit" value="Submit" /></li>
+ <br><li> <input type="submit" ID="submit" value="Get Month Dates" /></li>
 </form> 
 <form name="logout" action="Logout" method="get">
  <br><input type="submit" ID="Logout" value="Logout" onclick="Logout" />
  </form>
 <br>
 <h5> For details on Automation used, please click <a href="detail2.html" target="_top">here</a> </h5>
+<h5> For details on Web Services Integration used, please click <a href="detail2.html" target="_top">here</a> </h5>
 <br>©Jay Sarna 2016
 </body>
 </html>

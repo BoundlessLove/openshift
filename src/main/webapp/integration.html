@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Integration</title>
+  
+<style>
+section{
+  display: block;
+}
+
+body, div {
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+
+#header {
+    background:orange;
+}
+#container {
+    background:blue;
+}
+#content {
+    background:pink;
+}
+#footer {
+    background:green;
+}
+
+.holder {   
+  width: auto;
+  display: inline-block;
+}
+
+.width70 {
+  width: 70%; 
+  height: auto;    
+}​
+
+.width30 {
+  width: 30%; 
+  height: auto;    
+}​
+
+.width100 {
+  width: 100%; 
+  height: auto;    
+}​
+
+.flex-init-setup {
+     display: -webkit-box;
+     display: -moz-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+ }
+ .flex-ppal-setup {
+     -webkit-flex-flow: column wrap;
+     -moz-flex-flow: column wrap;
+     flex-flow: column wrap;
+     -webkit-justify-content: center;
+     -moz-justify-content: center;
+     justify-content: center;
+ }
+ </style>
+
+</head>
+<body>
+
+<section id="container flex-init-setup flex-ppal-setup">
+<div class="header"> 
+<h1>Web Calendar - Integration with Web Services</h1>
+<br> <a href="hello.jsp" target="_top">back</a> to login page 
+<li></li>
+<br>
+<table border="1">
+	<tr>
+		<td>
+			<h2 id="toc"> Table of Contents</h2>
+			<br>
+			<br>1. <a href="#purpose">PURPOSE</a> 
+			<br>
+			<br>2. <a href="#whatItIntegratesWith">WHAT DOES IT INTEGRATE WITH</a>
+			<br>
+			<br>3. <a href="#whyItIsImportant">WHY IS IT IMPORTANT?</a>
+			<br>
+			<br>4. <a href="#howDoesItIntegrate">HOW DOES IT INTEGRATE</a>
+			<br>
+			<br>5. <a href="#testingUsingSoapUi">TESTING USING SOAP UI</a>
+			<br>
+			<br>6. <a href="#previousWorkWithWebServices">PREVIOUS WORK WITH WEB SERVICES</a>
+			<br>
+			<br> <a href="integration.html" target="_top">Back to Top</a>
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<div class="header">
+			<h3 id="purpose">1. PURPOSE</h3>
+				<h4>To demonstrate how SERVICE ORIENTED ARCHITECTURE can be incorporated into a project.</h4>
+				
+				<div class="holder">
+    					<img src="AgileBoard.jpg" class="width70"/>
+				</div>	
+				<br>
+				<br> <a href="#toc">Back to Table Of Contents</a>	
+		</div>
+		</td>
+	</tr>
+	<tr>	
+		<td>
+			<h3  id="whatItIntegratesWith">2. WHAT DOES IT INTEGRATE WITH</h3>
+				<br> This application integrates with a web service that supplies month start and end dates.
+					Click <a href="http://helloworldws-jaysarnawbcalndr.rhcloud.com/jboss-helloworld-ws/HelloWorldService?wsdl">here</a> to see wsdl. 
+				<br>
+				<br> <a href="#toc">Back to Table Of Contents</a>
+				<br>
+		</td>
+	</tr>			
+	<tr>	
+		<td>
+			<h3 id="whyItIsImportant">3. WHY IS IT IMPORTANT</h3>
+				<h4>This application has been developed entirely using test driven development including the web services integration.</h4>
+				 
+				<br> <a href="#toc">Back to Table Of Contents</a>			 
+		</td>
+	</tr>
+	<tr>	
+		<td>
+			<h3 id="howDoesItIntegrate">4. HOW DOES IT INTEGRATE</h3>
+				<h4>Three step process was followed to achieve the integration:</h4>
+				 
+				<table>
+					<tr>
+						<td>
+							<h5>PRE-REQUISITE</h5>
+								<br>1. Selenium, cucumber running on Eclipse
+								<br>2. Openshift account setup with RHC and GIT configuration management tools setup.
+								<br>3. Access to a <a href="https://github.com/jboss-openshift/openshift-examples/tree/master/helloworld-ws"> sample openshift web services project</a> on github.
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h5>STEP 1</h5>
+								<br> Setup the Web Service using sample and incorporate web methods in it needed by Web Calendar application. 
+								<br> What success meant: A web service wsdl publically available that exposes the methods needed in web calendar application.
+								<br><div class="holder">
+    									<img src="RubyImplementation.jpg" class="width70"/>
+								</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h5>STEP 2</h5>
+								<br>Test the web service using development tool to ensure that web service is fit for purpose.  
+								<br>What success meant: Web service operations needed by web calendar application all work.  
+								<br>
+								<br> Web service testing using Eclipse (development tool) 
+								<br><div class="holder">
+    									<img src="RubyImplementation.jpg" class="width70"/>
+								</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h5>STEP 3</h5>
+								<br>Setup web calendar application to consume the web service by using wsimport command. <a href="http://www.mkyong.com/webservices/jax-ws/jax-ws-hello-world-example/"> Click</a> for details. 
+    							Then run the cucumber scripts to verify that existing functionality all still works.
+    							<br><div class="holder">
+    									<img src="images/TestDrivenWithIntegration.jpg" class="width70"/>
+								</div>	
+						</td>
+					</tr>
+				</table>	
+				<br>
+				<br> <a href="#toc">Back to Table Of Contents</a>			 
+		</td>
+	</tr>
+	<tr>	
+		<td>
+			<h3 id="testingUsingSoapUi">5. TESTING USING SOAP UI</h3>
+				<h4>The Web Service created was also integration tested using SOAP UI</h4>
+				 <br>In particular, 
+				 <br>1. SOAP UI was used to create sample XML messages using the wsdl.
+				 <br>2. The sample SOAP messages were sent to the web service.
+				 <br>3. The response messages were verified to ensure they displayed the correct information. 
+				<br>
+				<br><div class="holder">
+    					<img src="MonitorProgress.jpg" class="width70"/>
+					</div>	
+				<br>
+				<br> <a href="#toc">Back to Table Of Contents</a>
+		</td>
+	</tr>
+	<tr>	
+		<td>
+			<h3  id="previousWorkWithWebServices"> 6. PREVIOUS WORK WITH WEB SERVICES</h3>
+				<br>
+				<br> University of Auckland Bachelor of Engineering Final year project to enhance Web Service Availability-
+				<br>
+				<br> PROJECT AIM: To develop a Software Framework to Dynamically Reconfigure Web Services to deal with downtime 
+				<br>
+				<br> During my final year at university I co-developed with one partner a software framework for dealing with downtime experienced by web services, both scheduled and unscheduled, with the aim of making remote web services robust.  The application developed would monitor the communications with the web service via a proxy and if it noticed an outage, it would in real time switch to another web service, the link to which was stored in an associated database and could be updated via a GUI interface by a privileged user. In case of maintenance related scheduled outages, the GUI could be used to initiate the switch to a standby web service by user. For unscheduled outages, we came up with two algorithms to implement the proxy’s response, a “pro-active” one and a “re-active” one. The “pro-active” one would use pings to determine the health of the web service and if noticing an outage, it would switch web services in real time. The “re-active” one would use as a trigger, an outage related exception generated by the web service in response to a valid request, due to unforeseen outage to perform the switch. 
+
+ 				<br>
+ 				<br>For Details <a href="https://www.researchgate.net/publication/237759905_DYNAMICALLY_RECONFIGURABLE_WEB-SERVICES">see</a> 
+				<br>
+				<br>
+				<br> <a href="#toc">Back to Table Of Contents</a>
+		</td>
+	</tr>
+</table>
+<br> To go back to web calendar application click <a href="hello.jsp" target="_top">here</a> 
+<br>
+<br>©Jay Sarna 2016       
+  
+</div>
+</section>
+</body>
+</html>
+        
