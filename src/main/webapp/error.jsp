@@ -9,10 +9,10 @@
 </head>
 <body>
 <% if(response.getStatus() == 500){ %>
-<p><strong><font color="red">PAGE COULD NOT BE DISPLAYED. APOLOGISE FOR THE INCONVENIENCE.</font></strong> 
+<p><font color="red"><strong>PAGE COULD NOT BE DISPLAYED. APOLOGISE FOR THE INCONVENIENCE.</strong> 
 <br>The web service connected to this application 
 takes time to load, when used first time after a long time,
-therefore please try login one more time after one minute.</p>
+therefore please try login one more time after one minute.</font></p>
 
 <%-- include login page --%>
 <%@ include file="hello.jsp"%>
