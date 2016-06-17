@@ -4,6 +4,9 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+
+import javax.xml.ws.soap.SOAPFaultException;
+
 import org.jboss.jbossas.quickstarts.wshelloworld.helloworld.*;
 
 public class MonthDatesBean implements java.io.Serializable
@@ -32,12 +35,12 @@ public class MonthDatesBean implements java.io.Serializable
 	   String weekday = day.format(c.getTime());
 	   DateFormat day2 = new SimpleDateFormat("dd/MM/yyyy");
 	   String date = day2.format(c.getTime());*/
-		HelloWorldService_Service helloService = new HelloWorldService_Service();
+	   HelloWorldService_Service helloService = new HelloWorldService_Service();
 		HelloWorldService hello = helloService.getHelloWorld();
 		String weekday = hello.getMonthEndDay(getMonth(), getYear());
 		String date = hello.getMonthEndDate(getMonth(), getYear());
 	   setMonthEndDate(weekday+ " "+date);
-       return monthEndDate;
+	   return monthEndDate;
    }
    public String getMonthStartDate(){
 	/*   Calendar c = null;
@@ -54,7 +57,7 @@ public class MonthDatesBean implements java.io.Serializable
 	   String weekday = day.format(c.getTime());
 	   DateFormat day2 = new SimpleDateFormat("dd/MM/yyyy");
 	   String date = day2.format(c.getTime());*/
-		HelloWorldService_Service helloService = new HelloWorldService_Service();
+	   HelloWorldService_Service helloService = new HelloWorldService_Service();
 		HelloWorldService hello = helloService.getHelloWorld();
 		String weekday = hello.getMonthStartDay(getMonth(), getYear());
 		String date = hello.getMonthStartDate(getMonth(), getYear());

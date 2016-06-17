@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+    pageEncoding="ISO-8859-1" errorPage="error.jsp"%>
     
  <%@ page import="java.util.Properties"%> 
  <%@ page import="beans.*" %>
@@ -38,7 +38,7 @@ if (session.getAttribute("username") == null){
 <p><label id="MonthEndDate">Month End Date: <font color=blue>
    <jsp:getProperty name="monthDates" property="monthEndDate"/></font></label>
 </p>
-<li></li>
+<p></p>
 <form name="displaymonth" action="DisplayMonth" method="get">
 <br>To View a different Month, please select month and year below:</h3> 
 <br>
