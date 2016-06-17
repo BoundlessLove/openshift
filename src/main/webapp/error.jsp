@@ -10,7 +10,7 @@
 <body>
 <% if(response.getStatus() == 500){ %>
 <p><font color="red"><strong>PAGE COULD NOT BE DISPLAYED. APOLOGISE FOR THE INCONVENIENCE.</strong> 
-<br>The web service connected to this application 
+<br>The SOAP web service connected to this application 
 takes time to load, when used first time after a long time,
 therefore please try login one more time after one minute.</font></p>
 
