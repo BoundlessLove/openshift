@@ -17,8 +17,9 @@ therefore please try login one more time after one minute.</p>
 <%-- include login page --%>
 <%@ include file="hello.jsp"%>
 <%}else {%>
-Hi There, error code is <%=response.getStatus() %><br>
-Please go to <a href="hello.jsp">home page</a>
+<br>Hi There, error code is <%=response.getStatus() %>
+<br><font color="red">Error: <%=exception.getMessage() %></font>
+<br>Please go to <a href="hello.jsp">home page</a>
 <%} %>
 </body>
 
