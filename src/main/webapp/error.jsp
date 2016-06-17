@@ -9,11 +9,11 @@
 </head>
 <body>
 <% if(response.getStatus() == 500){ %>
-<font color="red">Error: <%=exception.getMessage() %></font><br>
-<p><strong>APOLOGISE FOR THE INCONVENIENCE. The web service connected to this application 
+<p><strong><font color="red">PAGE COULD NOT BE DISPLAYED. APOLOGISE FOR THE INCONVENIENCE.</font></strong> 
+<br>The web service connected to this application 
 takes time to load, when used first time after a long time,
-therefore please try login one more time after one minute.</strong></p>
- 
+therefore please try login one more time after one minute.</p>
+
 <%-- include login page --%>
 <%@ include file="hello.jsp"%>
 <%}else {%>
