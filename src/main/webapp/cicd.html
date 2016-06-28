@@ -88,7 +88,7 @@ html, body {
 			<br>
 			<br>2. <a href="#whatItIntegratesWith">WHAT DOES IT INTEGRATE WITH</a>
 			<br>
-			<br>3. <a href="#whyItIsImportant">WHY IS IT IMPORTANT?</a>
+			<br>3. <a href="#whyItIsImportant">WHY IS IT IMPORTANT</a>
 			<br>
 			<br>4. <a href="#howDoesItIntegrate">HOW DOES IT INTEGRATE</a>
 			<br>
@@ -123,13 +123,13 @@ html, body {
 				<br>
 				<br>WITHOUT CONTINUOUS INTEGRATION
 				<br> 
-				<br>In the past, several developers working on the same project using a configuration management tool like SVN,GIT etc. could checkin their changes to the code repository and run the build. This would continue till the application was built and ready to test, only then the functional and integration defect finding tasks could begin. Unfortunately in testing processes, the gnarly and critical task of regression defect finding due to coupled code tend to be the last of the tests planned to be run. Depending on the "software development lifecycle" followed, testing would only start days/weeks/months after the commencement of the project.
+				<br>In the past, several developers working on the same project using a configuration management tool like SVN,GIT etc. could checkin their changes to the code repository and run the build. This would continue till the application was built and ready to test, only then the functional and integration defect finding tasks could begin. Unfortunately in testing processes, the gnarly and critical task of regression defect finding due to coupled code tends to be the last of the tests planned to be run. Depending on the "software development lifecycle" followed, testing would only start days/weeks/months, essentially after the commencement of the project.
   				<br>
   				<br>WITH CONTINUOUS INTEGRATION
   				<br>
   				<br>It is a testing principle that the sooner the defects are found in software development, the cheaper they are to fix (Refer ISTQB principles). Continuous integration's benefit is that it allows us to find defects early. So, in a development team implementing continuous integration with say Jenkins, the automated regression tests could be added to the build process such that they are run every time the build is run by Jenkins. Jenkins can be configured to trigger a build after each change is committed/pushed to the code branch or scheduled nightly. This means that critical regression defects are found instantaneously as the code is being developed, rather than being found days/weeks/months later after the code is deployed to the test environment.
   				<br>	 
-  				<br>WHAT IT MEANS TO THE WEB CALENDAR APPLICATION
+  				<br><strong>WHAT IT MEANS TO THE WEB CALENDAR APPLICATION</strong>
 				<h4>This application is configured to auto-run Selenium tests using the TestNG framework right after the application build is triggered in Jenkins. It is important to note that the build is displayed to Jenkins viewers as a PASS only when the build passes and these tests pass. So critical defects are found instantly. See below for how it works:</h4>
 				<br> <a href="#toc">Back to Table Of Contents</a>			 
 		</td>
@@ -149,7 +149,7 @@ html, body {
 					<tr>
 						<td>
 							<h5>PRE-REQUISITE</h5>
-								<br>1. Selenium RC and TestNG running on Eclipse
+								<br>1. Selenium RC and TestNG running on Eclipse IDE (software development tool)
 								<br>2. Openshift account setup with RHC and GIT configuration management tools setup.
 								<br>3. Jenkins setup on localhost via placing the downloadable jenkins.war file into the webapps folder of Apache TOMCAT installation. 
 								<br>4. Jenkins has "GIT" plugin installed								 
