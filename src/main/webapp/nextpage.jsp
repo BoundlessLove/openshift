@@ -64,6 +64,7 @@ if (session.getAttribute("username") == null){
 <br>
 <h5> For details on Automation used, please click <a href="detail2.html" target="_top">here</a> </h5>
 <h5> For details on Web Services Integration used, please click <a href="integration.html" target="_top">here</a> </h5>
+<h5> For details of Continuous integration using Jenkins implemented, please click <a href="cicd.html" target="_top">here</a> </h5>
 <br>©Jay Sarna 2016
 </body>
 </html>

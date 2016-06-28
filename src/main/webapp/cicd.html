@@ -73,9 +73,10 @@ html, body {
 
 <section id="container flex-init-setup flex-ppal-setup">
 <div class="header"> 
-<h1>Web Calendar - Integration with Jenkins</h1>
+<h1>Web Calendar - Continuous Integration using Jenkins</h1>
 <br> <a href="hello.jsp" target="_top">back</a> to login page 
 <br> <a href="detail2.html" target="_top">back</a> to details of Automation used
+<br> <a href="integration.html" target="_top">back</a> to details of SOAP Web Services Integration implemented
 <p></p>
 <br>
 <table border="1">
@@ -98,7 +99,7 @@ html, body {
 		<td>
 		<div class="header">
 			<h3 id="purpose">1. PURPOSE</h3>
-				<h4>To demonstrate that it is possible to run automated tests every time a change is committed to code repository.</h4>
+				<h4>To demonstrate that it is possible to trigger and run automated regression tests automatically and remotely, every time a change is committed to a code repository.</h4>
 				<br>
 				<br> <a href="#toc">Back to Table Of Contents</a>	
 		</div>
@@ -116,18 +117,20 @@ html, body {
 	<tr>	
 		<td>
 			<h3 id="whyItIsImportant">3. WHY IS IT IMPORTANT</h3>
-				<br> To understand the importance of what has been achieved, it will be helpful to understand what continous integration can give us.
+				<br> To understand the importance of what has been achieved, it will be helpful to understand the promise continous integration holds in terms of finding early defects for software testers.
 				<br>
 				<br><Strong>BACKGROUND FROM SOFTWARE TESTING PERSPECTIVE</Strong>
 				<br>
-				<br>WITHOUT CONTINUOUS INTEGRATION 
-				<br>In the past, several developers working on the same project using a configuration management tool like SVN,GIT etc. could checkin their and run the build. After development completed, depending on the "software development lifecycle" followed, after days/weeks/months, the software would be deployed to test environment and defects would be found.
+				<br>WITHOUT CONTINUOUS INTEGRATION
+				<br> 
+				<br>In the past, several developers working on the same project using a configuration management tool like SVN,GIT etc. could checkin their changes to the code repository and run the build. This would continue till the application was built and ready to test, only then the functional and integration defect finding tasks could begin. Unfortunately in testing processes, the gnarly and critical task of regression defect finding due to coupled code tend to be the last of the tests planned to be run. Depending on the "software development lifecycle" followed, testing would only start days/weeks/months after the commencement of the project.
   				<br>
   				<br>WITH CONTINUOUS INTEGRATION
-  				<br>It is a testing principle that the later the defects are found in software development, the more expensive they are to fix (Refer ISTQB principles). Continuous integration's benefit is that it allows us to find defects early. So, in a development team implementing continuous integration with say Jenkins, the automated regression tests could be added to the build process such that they are run every time the build is run by Jenkins. Jenkins can be configured to trigger a build after each change is committed/pushed to the code branch or scheduled nightly. This means that critical defects are found instantaneously as the code is being developed, rather than being found days/weeks/months later when the code is deployed to the test environment.
+  				<br>
+  				<br>It is a testing principle that the sooner the defects are found in software development, the cheaper they are to fix (Refer ISTQB principles). Continuous integration's benefit is that it allows us to find defects early. So, in a development team implementing continuous integration with say Jenkins, the automated regression tests could be added to the build process such that they are run every time the build is run by Jenkins. Jenkins can be configured to trigger a build after each change is committed/pushed to the code branch or scheduled nightly. This means that critical regression defects are found instantaneously as the code is being developed, rather than being found days/weeks/months later after the code is deployed to the test environment.
   				<br>	 
   				<br>WHAT IT MEANS TO THE WEB CALENDAR APPLICATION
-				<h4>This application is configured to auto-run Selenium tests using the TestNG framework right after the application build is triggered in Jenkins. It is important to note that the build is displayed as a PASS only when the build passes <strong>and</strong> these tests pass. So critical defects are found instantly.</h4>
+				<h4>This application is configured to auto-run Selenium tests using the TestNG framework right after the application build is triggered in Jenkins. It is important to note that the build is displayed to Jenkins viewers as a PASS only when the build passes and these tests pass. So critical defects are found instantly. See below for how it works:</h4>
 				<br> <a href="#toc">Back to Table Of Contents</a>			 
 		</td>
 	</tr>
@@ -135,12 +138,18 @@ html, body {
 		<td>
 			<h3 id="howDoesItIntegrate">4. HOW DOES IT INTEGRATE</h3>
 				<h4>Three step process was followed to achieve the integration:</h4>
-				 
 				<table>
 					<tr>
 						<td>
+							<h5>OBJECTIVE</h5>
+								<br>Please see "WHAT IT MEANS TO THE WEB CALENDAR APPLICATION" in the "Why is it important" section <a href="#whyItIsImportant">above</a>.								 
+								<br>
+						</td>
+					</tr>
+					<tr>
+						<td>
 							<h5>PRE-REQUISITE</h5>
-								<br>1. Selenium, TestNG running on Eclipse
+								<br>1. Selenium RC and TestNG running on Eclipse
 								<br>2. Openshift account setup with RHC and GIT configuration management tools setup.
 								<br>3. Jenkins setup on localhost via placing the downloadable jenkins.war file into the webapps folder of Apache TOMCAT installation. 
 								<br>4. Jenkins has "GIT" plugin installed								 
@@ -196,12 +205,12 @@ html, body {
     							<br>
     							<br> The image below displays how web calendar application build passes when the automation tests pass.
     							<br><div class="holder">
-    									<img src="images/AutomatedTestsFail.jpg" class="width70"/>
+    									<img src="images/AutomatedTestsPass.jpg" class="width70"/>
 								</div>
     							<br>
     							<br> The image below displays how web calendar application build fails when the automation tests fail, even if the build of the code branch succeeded.
     							<br><div class="holder">
-    									<img src="images/AutomatedTestsPass.jpg" class="width70"/>
+    									<img src="images/AutomatedTestsFail.jpg" class="width70"/>
 								</div>	
 						</td>
 					</tr>
