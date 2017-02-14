@@ -59,6 +59,12 @@ function validateMyForm() {
 <h5> For details on SOAP Web Services Integration used, please click <a href="integration.html" target="_top">here</a> </h5>
 <h5> For details of Continuous integration using Jenkins implemented, please click <a href="cicd.html" target="_top">here</a> </h5>
 
-<br>©Jay Sarna 2016
+<br>©Sarna, J 2017
+<br> Author is Alumni of Software Engineering, University of Auckland, New Zealand
+<br>
+<h3> References</h3>
+<br> 1. Reddy, C.S. (2015), Jenkins Tutorial - Part03: Git Integration & Configuring jobs using GIT, Source: https://www.youtube.com/watch?v=ISAUsBSI8G0
+<br> 2. ..
+<br> More coming....
 </body>
 </html>
