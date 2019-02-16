@@ -15,7 +15,9 @@ public class ConnectionMySql {
 		// TODO Auto-generated method stub
 			
 		try{
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/webcalendarDB", "root", "admin");
+			//String url = "jdbc:mysql://127.0.0.1:3306/webcalendarDB?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&serverTimezone=GMT";
+			//Connection con = DriverManager.getConnection(url, "admin", "Password02");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/webcalendarDB", "admin", "Password02");
 			System.out.println("connection successful");
 			String query = "Select * from User";
 			Statement stmt = con.createStatement();
@@ -24,7 +26,7 @@ public class ConnectionMySql {
 				System.out.println("UserID: "+rs.getString("UserID"));
 			}
 		} catch (Exception e) {
-			System.err.println(e);
+			System.err.println("Issue during database initiation: "+ e);
 		}
 	}
 		
@@ -34,12 +36,13 @@ public class ConnectionMySql {
 			Class driver_class = Class.forName(drivername);
 			Driver driver = (Driver) driver_class.newInstance();
 			DriverManager.registerDriver(driver);
-			con = DriverManager.getConnection("jdbc:mysql://127.7.227.130:3306/testdrivendevelopment", "admin9lIqcSX", "tQb7J2VA3Ivz");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/webcalendarDB", "admin", "Password02");
+			//con = DriverManager.getConnection("jdbc:mysql://127.7.227.130:3306/testdrivendevelopment", "admin9lIqcSX", "tQb7J2VA3Ivz");
 			System.out.println("connection successful test");
 			
 		} catch (Exception e) {
-			System.err.println(e);
 			System.out.println("connection NOT successful");
+			System.err.println(e);
 		}
 	}
 	
@@ -51,7 +54,8 @@ public class ConnectionMySql {
 			rs = stmt.executeQuery(query);
 			return rs;
 		} catch (Exception e) {
-			System.err.println(e);
+			System.err.println("Issue during running query: "+ e);
+			e.printStackTrace();
 			return null;
 		}
 		

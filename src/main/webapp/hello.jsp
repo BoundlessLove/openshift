@@ -34,7 +34,7 @@
 
 <font color="red"><p id="demo"></p></font>
 
-
+<!-- preventing sql injection -->
 <script "text/javascript">
 function validateMyForm() {
 	var usrnm, pswd, text;

@@ -20,7 +20,7 @@ public class MonthDatesBean implements java.io.Serializable
    }
    public String getMonthEndDate(){
 	   
-	 /*  Calendar c = null;
+	   Calendar c = null;
 		try {
 			c = getCurrentMonthCalendarObj(); // this takes current date
 		} catch (Throwable e) {
@@ -34,16 +34,16 @@ public class MonthDatesBean implements java.io.Serializable
 	   DateFormat day = new SimpleDateFormat("EEEE");
 	   String weekday = day.format(c.getTime());
 	   DateFormat day2 = new SimpleDateFormat("dd/MM/yyyy");
-	   String date = day2.format(c.getTime());*/
-	   HelloWorldService_Service helloService = new HelloWorldService_Service();
+	   String date = day2.format(c.getTime());
+	   /*HelloWorldService_Service helloService = new HelloWorldService_Service();
 		HelloWorldService hello = helloService.getHelloWorld();
 		String weekday = hello.getMonthEndDay(getMonth(), getYear());
-		String date = hello.getMonthEndDate(getMonth(), getYear());
+		String date = hello.getMonthEndDate(getMonth(), getYear());*/
 	   setMonthEndDate(weekday+ " "+date);
 	   return monthEndDate;
    }
    public String getMonthStartDate(){
-	/*   Calendar c = null;
+	   Calendar c = null;
 		System.out.println("month Jay: "+month);
 	   	try {
 			c = getCurrentMonthCalendarObj(); // this takes current date
@@ -56,11 +56,11 @@ public class MonthDatesBean implements java.io.Serializable
 	   DateFormat day = new SimpleDateFormat("EEEE");
 	   String weekday = day.format(c.getTime());
 	   DateFormat day2 = new SimpleDateFormat("dd/MM/yyyy");
-	   String date = day2.format(c.getTime());*/
-	   HelloWorldService_Service helloService = new HelloWorldService_Service();
+	   String date = day2.format(c.getTime());
+	   /*HelloWorldService_Service helloService = new HelloWorldService_Service();
 		HelloWorldService hello = helloService.getHelloWorld();
 		String weekday = hello.getMonthStartDay(getMonth(), getYear());
-		String date = hello.getMonthStartDate(getMonth(), getYear());
+		String date = hello.getMonthStartDate(getMonth(), getYear());*/
 	   setMonthStartDate(weekday+ " "+date);
 	   return monthStartDate;
    }

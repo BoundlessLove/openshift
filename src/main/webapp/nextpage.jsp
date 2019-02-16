@@ -40,21 +40,29 @@ if (session.getAttribute("username") == null){
 </p>
 <p></p>
 <form name="displaymonth" action="DisplayMonth" method="get">
-<br>To View a different Month, please select month and year below:</h3> 
+<br>To view the starting weekday and ending weekday for a different Month, please select month and year below:</h3> 
 <br>
 <br> Select a month: 
 <select id="monthlist" name="monthlist">
+   <option value="January">January</option>
+   <option value="February">February</option>
+   <option value="March">March</option>
+   <option value="April">April</option>
+   <option value="May">May</option>
    <option value="June">June</option>
    <option value="July">July</option>
    <option value="August">August</option>
    <option value="September">September</option>
+   <option value="October">October</option>
+   <option value="November">November</option>
+   <option value="December">December</option>
 </select> 
 <br>
 <br> Select a year: 
 <select id="yearlist" name="yearlist">
-   <option value="2016">2016</option>
-   <option value="2015">2015</option>
-   <option value="2017">2017</option>
+   <option value="2019">2019</option>
+   <option value="2020">2020</option>
+   <option value="2021">2021</option>
 </select> 
  <br><li> <input type="submit" ID="submit" value="Get Month Dates" /></li>
 </form> 
